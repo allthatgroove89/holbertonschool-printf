@@ -1,0 +1,29 @@
+_printf "TIME HERE" "Man page of _printf function"
+
+NAME
+	_printf - format and print data
+
+SYPNOSIS
+	#include "main.h"
+
+	int _printf(const char *format, ...);
+
+DESCRIPTION
+
+	_printf() function produces output according to the format. It uses a specific function
+	according to receipt format in order to display the result in the correct format.
+
+	The available convertion specifiers are:
+
+	c - prints a singular character
+
+	s - prints a string of characters
+
+	% - prints literals
+
+	d - prints decimals
+
+	i - prints integers
+
+	AUTHORS
+	Saul Vera Echevestre, Ginna Vionette Rodriguez
