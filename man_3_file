@@ -1,4 +1,4 @@
-_printf "TIME HERE" "Man page of _printf function"
+_printf "21 or March, 2024" "Man page of _printf function"
 
 NAME
 	_printf - format and print data
@@ -24,6 +24,14 @@ DESCRIPTION
 	d - prints decimals
 
 	i - prints integers
+
+	b - prints binary
+
+	o - prints octal integers
+
+	u - prints unsigned integers
+
+	x(lowercase) - prints hexadecimals numbers (in lowercase)
 
 	AUTHORS
 	Saul Vera Echevestre, Ginna Vionette Rodriguez
