@@ -111,6 +111,11 @@ int _printf(const char *format, ...)
 				case 'i':
 					handle_int(args, &count);
 					break;
+				default:
+					write(1, &format[i - 1], 1);
+					write(1, &format[i], 1);
+					count += 2;
+					break;
 
 			}
 		}
