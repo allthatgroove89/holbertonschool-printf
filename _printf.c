@@ -85,6 +85,10 @@ int _printf(const char *format, ...)
 	int count = 0;
 
 	va_start(args, format);
+	 if (format == NULL)
+	 {
+		 write(1, "(null)", 6);
+	 }
 
 	while (format && format[i])
 	{
