@@ -1,4 +1,8 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
 
 /**
  * _print_binary - print a number in base 2
@@ -29,7 +33,7 @@ void _print_unsigned(va_list list)
 
 	rose = itoa(va_arg(list, unsigned int), 10);
 
-	size = print((rose != NULL) ? rose : "NULL");
+	size = printf((rose != NULL) ? rose : "NULL");
 
 	return (size);
 }
@@ -46,7 +50,7 @@ void _print_octal(va_list list)
 
 	rose = itoa(va_arg(list, unsigned int), 8);
 
-	size = print((rose != NULL) ? rose : "NULL");
+	size = printf((rose != NULL) ? rose : "NULL");
 
 	return (size);
 }
@@ -63,7 +67,7 @@ void _print_hexadecimal_lower(va_list list)
 
 	rose = itoa(va_arg(list, unsigned int), 16);
 
-	size = print((rose != NULL) ? rose : "NULL");
+	size = printf((rose != NULL) ? rose : "NULL");
 
 	return (size);
 }
