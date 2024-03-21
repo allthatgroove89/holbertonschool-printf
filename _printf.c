@@ -96,6 +96,10 @@ int _printf(const char *format, ...)
 				case 's':
 					handle_string(args, &count);
 					break;
+				case 'd':
+				case 'i':
+					handle_int(args, &count);
+					break;
 
 			}
 		}
