@@ -6,33 +6,24 @@ _printf is a C library for dealing with string format.It handles the following c
   - c
 - s
  - %
+ - i
+ - d
 
 ## Installation
 
 Access Github and request a pull, [link](https://github.com/allthatgroove89/holbertonschool-printf/pulls) to install to get function package.
 
-```bash
-int _printf(const char *format, ...);
-```
 
-## Outputs
-
-```C
-int _printf(const char *format, ...);
-
-# _printf("Character:[%c]\n", 'H')
-   returns Character:[H]
+## Function Prototypes
 
 
-# _printf("String:[%s]\n", "I am a string !");
-   String:[I am a string !]
+All function prototypes used to compile _printf() are included in the header file:
 
-
-# len = _printf("Percent:[%%]\n");
-   Percent:[%]
-
-
-```
+- int _printf(const char *format, ...);
+- void handle_percent(int *count);
+- void handle_char(va_list args, int *count);
+- void handle_string(va_list args, int *count);
+- void handle_int(va_list args, int *count);
 
 ## Contributing
 
