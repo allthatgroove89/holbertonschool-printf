@@ -87,7 +87,7 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	 if (format == NULL)
 	 {
-		 write(1, "(null)", 6);
+		 return (-1);
 	 }
 
 	while (format && format[i])
