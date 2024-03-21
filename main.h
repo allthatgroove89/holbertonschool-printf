@@ -9,5 +9,8 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
+void handle_percent(int *count);
+void handle_char(va_list args, int *count);
+void handle_string(va_list args, int *count);
 
 #endif
