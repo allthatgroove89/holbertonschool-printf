@@ -1,6 +1,4 @@
 #include "main.h"
-
-
 /**
  * handle_percent - a function that handles the percent sign
  * @count: the count of characters printed
@@ -55,7 +53,7 @@ void handle_string(va_list args, int *count)
  * @args: the list of arguments
  * @count: the count of characters printed
  * Return: void
-*/
+ */
 void handle_int(va_list args, int *count)
 {
 	int num;
@@ -71,7 +69,6 @@ void handle_int(va_list args, int *count)
 	write(1, str, len);
 	(*count) += len;
 }
-
 /**
  * _printf - a function that produces output according to a format.
  * @format: format given
@@ -85,10 +82,10 @@ int _printf(const char *format, ...)
 	int count = 0;
 
 	va_start(args, format);
-	 if (format == NULL)
-	 {
-		 return (-1);
-	 }
+	if (format == NULL)
+	{
+		return (-1);
+	}
 
 	while (format && format[i])
 	{
