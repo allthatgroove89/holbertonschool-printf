@@ -1,22 +1,29 @@
-man page W.I.P. (work in progress, things may change)
+_printf "TIME HERE" "Man page of _printf function"
 
 NAME
-	printf - format and print data
+	_printf - format and print data
 
 SYPNOSIS
-	W.I.P
+	#include "main.h"
+
+	int _printf(const char *format, ...);
 
 DESCRIPTION
-	Printf ARGUMENT(S) according to FORMAT, or execute according to OPTION:
 
-	--help - display this help and exit
+	_printf() function produces output according to the format. It uses a specific function
+	according to receipt format in order to display the result in the correct format.
 
-	-- version
-		output version information and exit
+	The available convertion specifiers are:
 
-	FORMAT controls the output as in C printf. Interpreted sequences are:
+	c - prints a singular character
 
-	W.I.P.
+	s - prints a string of characters
+
+	% - prints literals
+
+	d - prints decimals
+
+	i - prints integers
 
 	AUTHORS
 	Saul Vera Echevestre, Ginna Vionette Rodriguez
