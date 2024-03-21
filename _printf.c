@@ -45,6 +45,28 @@ void handle_string(va_list args, int *count)
 }
 
 /**
+ * handle_int - a function that handles the int
+ * @args: the list of arguments
+ * @count: the count of characters printed
+ * Return: void
+*/
+void handle_int(va_list args, int *count)
+{
+	int num;
+	int len;
+	char str[12];
+
+	num = va_arg(args, int);
+
+	sprintf(str, "%d", num);
+
+	len = strlen(str);
+
+	write(1, str, len);
+	(*count) += len;
+}
+
+/**
  * _printf - a function that produces output according to a format.
  * @format: format given
  * Return: output according to a format
