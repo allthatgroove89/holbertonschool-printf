@@ -1,0 +1,37 @@
+_printf "21 or March, 2024" "Man page of _printf function"
+
+NAME
+	_printf - format and print data
+
+SYPNOSIS
+	#include "main.h"
+
+	int _printf(const char *format, ...);
+	void handle_percent(int *count);
+	void handle_char(va_list args, int *count);
+	void handle_string(va_list args, int *count);
+	void handle_int(va_list args, int *count);
+	void handle_format_specifier(char format, va_list args, int *count)
+	
+
+DESCRIPTION
+
+	_printf() function produces output according to the format. It uses a specific function
+	according to receipt format in order to display the result in the correct format.
+
+	The available convertion specifiers are:
+
+	c - prints a singular character
+
+	s - prints a string of characters
+
+	% - prints literals
+
+	d - prints decimals
+
+	i - prints integers
+
+
+
+	AUTHORS
+	Saul Vera Echevestre, Ginna Vionette Rodriguez
