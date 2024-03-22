@@ -1,4 +1,6 @@
 #include "main.h"
+
+
 /**
  * handle_percent - a function that handles the percent sign
  * @count: the count of characters printed
