@@ -34,7 +34,14 @@ Please make sure to update tests as appropriate.
 
 ## Flowchart
 
-
+```mermaid
+graph LR
+A[Main.h] -- Code --> B((Functions))
+A --> C(Test files)
+B --> D{Printf}
+C --> D
+D -->E{Output}
+```
 
 ## Authors and acknowledgment
 
